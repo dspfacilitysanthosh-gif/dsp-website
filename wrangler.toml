@@ -8,5 +8,5 @@ compatibility_date = "2024-04-01"
 
 [[kv_namespaces]]
 # Only add this if you are using KV storage
-# binding = "MY_KV"
+binding = "MY_KV_STORAGE"
 id = "0bc4f1379866308bc2b658933b8c74f1"
