@@ -105,23 +105,23 @@ export function Footer() {
                     <div className="space-y-4">
                         <h4 className="font-bold text-dsp-charcoal">Company</h4>
                         <ul className="space-y-2 text-sm text-gray-500">
-                            <li><a href="#" className="hover:text-dsp-primary transition-colors">About</a></li>
-                            <li><a href="#" className="hover:text-dsp-primary transition-colors">Services</a></li>
-                            <li><a href="#" className="hover:text-dsp-primary transition-colors">Careers</a></li>
+                            <li><Link href="/#about" className="hover:text-dsp-primary transition-colors">About</Link></li>
+                            <li><Link href="/#services" className="hover:text-dsp-primary transition-colors">Services</Link></li>
+                            <li><Link href="/careers" className="hover:text-dsp-primary transition-colors">Careers</Link></li>
                         </ul>
                     </div>
                     <div className="space-y-4">
                         <h4 className="font-bold text-dsp-charcoal">Legal</h4>
                         <ul className="space-y-2 text-sm text-gray-500">
-                            <li><a href="#" className="hover:text-dsp-primary transition-colors">Privacy Policy</a></li>
-                            <li><a href="#" className="hover:text-dsp-primary transition-colors">Terms of Service</a></li>
+                            <li><Link href="/privacy-policy" className="hover:text-dsp-primary transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms-of-service" className="hover:text-dsp-primary transition-colors">Terms of Service</Link></li>
                         </ul>
                     </div>
                     <div className="space-y-4">
                         <h4 className="font-bold text-dsp-charcoal">Contact</h4>
                         <ul className="space-y-2 text-sm text-gray-500">
-                            <li>info@dsp-manpower.com</li>
-                            <li>+1 (555) 123-4567</li>
+                            <li><a href="mailto:pradeep@dspfacility.com" className="hover:text-dsp-primary transition-colors">pradeep@dspfacility.com</a></li>
+                            <li><a href="tel:+919080463056" className="hover:text-dsp-primary transition-colors">+91 90804 63056</a></li>
                         </ul>
                     </div>
                 </div>

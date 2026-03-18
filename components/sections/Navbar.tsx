@@ -22,25 +22,20 @@ export function Navbar() {
             animate={{ y: 0 }}
             transition={{ duration: 0.8 }}
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 flex justify-center py-6 transition-all duration-300 pointer-events-none",
-                scrolled ? "py-4" : "py-6"
+                "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+                scrolled ? "bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm py-3" : "bg-transparent py-5"
             )}
         >
-            <div className={cn(
-                "pointer-events-auto flex items-center justify-between px-8 py-4 rounded-full border transition-all duration-300",
-                scrolled
-                    ? "bg-white/90 backdrop-blur-xl border-gray-200 shadow-xl shadow-gray-200/50 w-[95%] md:w-[80%]"
-                    : "bg-transparent border-transparent w-[95%]"
-            )}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between transition-all duration-300">
                 {/* Logo */}
-                {/* Logo */}
-                {/* Logo */}
-                <Link href="/" className="flex flex-col items-center leading-none gap-0 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300">
-                    <BrandLogo className={cn("transition-all duration-300", scrolled ? "w-12 h-12" : "w-16 h-16")} />
+                <Link href="/" className="flex flex-row items-center gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300">
+                    <BrandLogo className={cn("transition-all duration-300", scrolled ? "w-10 h-10" : "w-12 h-12")} />
                     <span className={cn(
-                        "text-lg transition-all duration-300 overflow-hidden",
-                        scrolled ? "max-h-0 opacity-0" : "max-h-8 opacity-100"
-                    )}>DSP</span>
+                        "transition-all duration-300 whitespace-nowrap",
+                        scrolled ? "text-lg md:text-xl" : "text-xl md:text-2xl"
+                    )}>
+                        DSP Facility Service
+                    </span>
                 </Link>
 
                 {/* Desktop Links */}
@@ -59,9 +54,11 @@ export function Navbar() {
 
                 {/* CTA */}
                 <div className="flex items-center gap-4">
-                    <GlossyButton variant="primary" className="px-6 py-2.5 text-base hidden sm:flex">
-                        Contact Us
-                    </GlossyButton>
+                    <Link href="/contact" className="hidden sm:flex">
+                        <GlossyButton variant="primary" className="px-6 py-2.5 text-base">
+                            Contact Us
+                        </GlossyButton>
+                    </Link>
                 </div>
             </div>
         </motion.nav>
