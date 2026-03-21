@@ -31,7 +31,7 @@ export default function ContactPage() {
 
               <div className="space-y-2">
                 <h4 className="font-bold text-dsp-charcoal">Email address</h4>
-                <a href="mailto:pradeep@dspfacility.com" className="text-dsp-primary hover:underline">pradeep@dspfacility.com</a>
+                <a href="mailto:support@dspfacility.com" className="text-dsp-primary hover:underline">support@dspfacility.com</a>
               </div>
               
               <div className="space-y-2">

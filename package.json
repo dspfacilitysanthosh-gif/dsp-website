@@ -1,14 +1,13 @@
 {
-  "name": "dsp-landing",
+  "name": "dsp-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "deplo": "wrangler deploy --env production"
-  },
+    "lint": "eslint"
+    },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.33.0",
