@@ -19,14 +19,20 @@ export function ContactForm() {
     // but this standard onSubmit approach works reliably across Next 13+ app router.
     try {
       const response = await submitContactForm(null, formData);
-      if (response.success) {
-        setMessage({ type: "success", text: response.message });
-        (e.target as HTMLFormElement).reset(); // Reset form on success
+     // Safely check if response exists and has expected properties
+      if (response && typeof response === "object" && "success" in response && "message" in response) {
+        if (response.success) {
+          setMessage({ type: "success", text: response.message || "Success!" });
+          (e.target as HTMLFormElement).reset();
+        } else {
+          setMessage({ type: "error", text: response.message || "An error occurred." });
+        }
       } else {
-        setMessage({ type: "error", text: response.message });
+        setMessage({ type: "error", text: "Invalid response from server. Please contact mobile number" });
       }
     } catch (err) {
-      setMessage({ type: "error", text: "An unexpected error occurred. Please try again later." });
+      const errorMessage = err instanceof Error ? err.message : "An unexpected error occurred. Please try again later.";
+      setMessage({ type: "error", text: errorMessage });
     } finally {
       setLoading(false);
     }

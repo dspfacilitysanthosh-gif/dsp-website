@@ -27,7 +27,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     // Email content
     const mailOptions = {
       from: process.env.SMTP_USER || email, // Sender address
-      to: "pradeep@dspfacility.com", // Recipient address
+      to: "support@dspfacility.com", // Recipient address
       replyTo: email,
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
