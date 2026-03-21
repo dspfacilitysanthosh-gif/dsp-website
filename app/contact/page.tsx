@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { GradientHeading } from "@/components/ui/GradientHeading";
