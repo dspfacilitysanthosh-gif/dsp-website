@@ -5,6 +5,7 @@ import { GlossyButton } from "@/components/ui/GlossyButton";
 import { GradientHeading } from "@/components/ui/GradientHeading";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import Link from "next/link";
+import { BrandText } from "../ui/BrandText";
 
 // Component for individual 3D Tilt Card
 function TiltCard({ src, index }: { src: string; index: number }) {
@@ -96,7 +97,7 @@ export function Footer() {
                 <div className="space-y-4">
                     <Link href="/" className="flex flex-col items-start gap-1 font-bold tracking-tighter text-dsp-charcoal">
                         <BrandLogo className="w-12 h-12" />
-                        <span className="text-2xl pl-1">DSP</span>
+                        <span className="text-2xl pl-1">DSP Facility Management Service</span>
                     </Link>
                     <p className="text-gray-500 max-w-xs">Powering industries with precision manpower and strategic staffing solutions.</p>
                 </div>
@@ -127,7 +128,7 @@ export function Footer() {
                 </div>
             </div>
             <div className="max-w-7xl mx-auto pt-8 border-t border-gray-100 text-center text-sm text-gray-400">
-                &copy; {new Date().getFullYear()} DSP Solutions. All rights reserved.
+                &copy; {new Date().getFullYear()} DSP Facility Management Service. All rights reserved.
             </div>
         </footer>
     );

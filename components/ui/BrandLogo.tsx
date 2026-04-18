@@ -6,7 +6,7 @@ export function BrandLogo({ className }: { className?: string }) {
     return (
         <div className={cn("relative", className)}>
             <Image
-                src="/logo.png"
+                src="/a-logo-1.png"
                 alt="DSP Logo"
                 fill
                 className="object-contain"

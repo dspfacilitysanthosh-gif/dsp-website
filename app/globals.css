@@ -68,6 +68,20 @@ body {
   animation-play-state: paused;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 24s linear infinite;
+}
+
 h1,
 h2,
 h3,
