@@ -5,6 +5,7 @@ import { GlossyButton } from "@/components/ui/GlossyButton";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { BrandLogo } from "../ui/BrandLogo";
 import { BrandText } from "../ui/BrandText";
 
 export function Navbar() {
@@ -27,13 +28,14 @@ export function Navbar() {
             )}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between transition-all duration-300">
-                {/* Logo */}
-                <Link href="/" className="flex flex-row items-center gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300">
-                    <BrandText className="transition-all duration-300 ease-in-out" />
+                {/* Brand */}
+                <Link href="/" className="navbar-brand flex items-center gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
+                    <BrandLogo className="w-12 h-12 sm:w-14 sm:h-14" />
+                    <BrandText className="w-[140px] sm:w-[220px] h-10 sm:h-14 transition-all duration-300 ease-in-out" />
                 </Link>
 
                 {/* Desktop Links and CTA */}
-                <div className="hidden md:flex items-center gap-12">
+                <div className="navbar-links hidden md:flex items-center gap-12">
                     {["About", "Services", "Why Us"].map((item) => (
                         <Link
                             key={item}
