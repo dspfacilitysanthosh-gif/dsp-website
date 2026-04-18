@@ -28,7 +28,7 @@ export function Navbar() {
             )}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between gap-1 sm:gap-4 transition-all duration-300 py-3">
+                <div className="flex items-center justify-between gap-1 sm:gap-4 transition-all duration-300 py-2">
                     {/* Brand */}
                     <Link href="/" className="navbar-brand flex items-center gap-2 sm:gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
                         <BrandLogo className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
@@ -58,7 +58,7 @@ export function Navbar() {
                 </div>
 
                 {/* Mobile Second Row - Nav Items */}
-                <div className="flex sm:hidden items-center justify-end gap-2 pb-3 pt-2 border-t border-gray-100">
+                <div className="flex sm:hidden items-center justify-end gap-2 pb-2 pt-1 border-t border-gray-100">
                     {['About', 'Services', 'Why Us'].map((item) => (
                         <Link
                             key={item}
