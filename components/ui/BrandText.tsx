@@ -7,7 +7,7 @@ export function BrandText({ className }: { className?: string }) {
         <div className={cn("flex items-center gap-2 min-w-0", className)}>
                         
             {/* Brand Text */}
-            <div className="relative min-w-0 flex-1 max-w-[160px] sm:max-w-[280px] h-10 sm:h-14">
+            <div className="relative min-w-0 flex-1 max-w-[200px] sm:max-w-[450px] h-10 sm:h-14">
                 <Image
                     src="/a-logotext-1.png"
                     alt="DSP Facility Management Service"
