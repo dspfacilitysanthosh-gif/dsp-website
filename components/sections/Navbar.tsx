@@ -40,7 +40,7 @@ export function Navbar() {
                         <Link
                             key={item}
                             href={`#${item.toLowerCase().replace(" ", "-")}`}
-                            className="text-[10px] md:text-base font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
+                            className="text-[8px] sm:text-[9px] md:text-base font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
                         >
                             {item}
                             <span className="absolute -bottom-1 left-0 w-0 h-px bg-dsp-primary transition-all group-hover:w-full" />
@@ -49,7 +49,7 @@ export function Navbar() {
 
                     {/* Contact Button */}
                     <Link href="/contact" className="inline-flex items-center">
-                        <GlossyButton variant="primary" className="px-3 py-1.5 text-[10px] md:px-6 md:py-2.5 md:text-base">
+                        <GlossyButton variant="primary" className="px-2.5 py-1 text-[8px] sm:px-3 sm:py-1.5 sm:text-[9px] md:px-6 md:py-2.5 md:text-base">
                             Contact Us
                         </GlossyButton>
                     </Link>
@@ -57,7 +57,7 @@ export function Navbar() {
             </div>
             <div className="border-t border-gray-200 bg-white/80 backdrop-blur-sm">
                 <div className="overflow-hidden">
-                    <div className="flex min-w-full animate-marquee items-center gap-2 whitespace-nowrap py-2 px-4 text-sm font-semibold uppercase tracking-[0.18em] text-dsp-charcoal">
+                    <div className="flex min-w-full animate-marquee items-center gap-2 whitespace-nowrap py-2 px-4 text-[10px] sm:text-[11px] md:text-sm font-semibold uppercase tracking-[0.18em] text-dsp-charcoal">
                         <span>Powering corporates with precision manpower</span>
                         <span className="mx-4 text-dsp-primary">•</span>
                         <span>We focus on maintenance. You focus on your productivity</span>
