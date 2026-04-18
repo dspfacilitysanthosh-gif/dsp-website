@@ -48,8 +48,8 @@ export function Navbar() {
                     ))}
 
                     {/* Contact Button */}
-                    <Link href="/contact" className="inline-flex items-center">
-                        <GlossyButton variant="primary" className="px-4 py-2 text-xs sm:px-5 sm:py-2 text-sm md:text-base">
+                    <Link href="/contact" className="hidden sm:flex">
+                        <GlossyButton variant="primary" className="px-6 py-2.5 text-base">
                             Contact Us
                         </GlossyButton>
                     </Link>
