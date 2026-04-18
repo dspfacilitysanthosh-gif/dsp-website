@@ -40,7 +40,7 @@ export function Navbar() {
                         <Link
                             key={item}
                             href={`#${item.toLowerCase().replace(" ", "-")}`}
-                            className="text-base font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
+                            className="text-sm sm:text-base font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
                         >
                             {item}
                             <span className="absolute -bottom-1 left-0 w-0 h-px bg-dsp-primary transition-all group-hover:w-full" />
@@ -49,7 +49,7 @@ export function Navbar() {
 
                     {/* Contact Button */}
                     <Link href="/contact" className="inline-flex items-center">
-                        <GlossyButton variant="primary" className="px-5 py-2 text-sm sm:px-6 sm:py-2.5 text-base">
+                        <GlossyButton variant="primary" className="px-4 py-2 text-xs sm:px-5 sm:py-2 text-sm md:text-base">
                             Contact Us
                         </GlossyButton>
                     </Link>
