@@ -6,11 +6,11 @@ import { BrandText } from "../ui/BrandText";
 export function NavbarMobile() {
     return (
         <div className="sm:hidden">
-            {/* Mobile First Row - Brand (Center Justified) */}
-            <div className="flex items-center justify-center gap-2 transition-all duration-300 py-3 w-full">
-                <Link href="/" className="navbar-brand flex items-center gap-2 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300">
-                    <BrandLogo className="w-8 h-8" />
-                    <BrandText className="w-[130px] h-10 transition-all duration-300 ease-in-out" />
+            {/* Mobile First Row - Brand (Left Justified) */}
+            <div className="flex items-center justify-start gap-2 transition-all duration-300 py-3 w-full px-4">
+                <Link href="/" className="navbar-brand flex items-center gap-2 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 w-full">
+                    <BrandLogo className="w-8 h-8 flex-shrink-0" />
+                    <BrandText className="w-full h-10 transition-all duration-300 ease-in-out" />
                 </Link>
             </div>
 
