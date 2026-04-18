@@ -27,15 +27,15 @@ export function Navbar() {
                 scrolled ? "bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm py-3" : "bg-transparent py-5"
             )}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between transition-all duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 transition-all duration-300">
                 {/* Brand */}
                 <Link href="/" className="navbar-brand flex items-center gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
                     <BrandLogo className="w-12 h-12 sm:w-14 sm:h-14" />
-                    <BrandText className="w-[140px] sm:w-[220px] h-10 sm:h-14 transition-all duration-300 ease-in-out" />
+                    <BrandText className="w-[120px] sm:w-[180px] h-10 sm:h-14 transition-all duration-300 ease-in-out" />
                 </Link>
 
-                {/* Desktop Links and CTA */}
-                <div className="navbar-links hidden md:flex items-center gap-12">
+                {/* Links and CTA */}
+                <div className="navbar-links flex flex-wrap items-center justify-end gap-4 md:gap-12 flex-1 min-w-0">
                     {["About", "Services", "Why Us"].map((item) => (
                         <Link
                             key={item}
@@ -48,8 +48,8 @@ export function Navbar() {
                     ))}
 
                     {/* Contact Button */}
-                    <Link href="/contact" className="hidden sm:flex">
-                        <GlossyButton variant="primary" className="px-6 py-2.5 text-base">
+                    <Link href="/contact" className="inline-flex items-center">
+                        <GlossyButton variant="primary" className="px-5 py-2 text-sm sm:px-6 sm:py-2.5 text-base">
                             Contact Us
                         </GlossyButton>
                     </Link>
