@@ -27,29 +27,52 @@ export function Navbar() {
                 scrolled ? "bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm py-3" : "bg-transparent py-5"
             )}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap sm:flex-nowrap items-center justify-between gap-1 sm:gap-4 transition-all duration-300">
-                {/* Brand */}
-                <Link href="/" className="navbar-brand flex items-center gap-2 sm:gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
-                    <BrandLogo className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
-                    <BrandText className="w-[130px] sm:w-[160px] md:w-[180px] h-10 sm:h-11 md:h-12 transition-all duration-300 ease-in-out" />
-                </Link>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between gap-1 sm:gap-4 transition-all duration-300 py-3">
+                    {/* Brand */}
+                    <Link href="/" className="navbar-brand flex items-center gap-2 sm:gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
+                        <BrandLogo className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+                        <BrandText className="w-[130px] sm:w-[160px] md:w-[180px] h-10 sm:h-11 md:h-12 transition-all duration-300 ease-in-out" />
+                    </Link>
 
-                {/* Links and CTA */}
-                <div className="navbar-links w-full sm:w-auto flex items-center justify-end gap-2 sm:gap-4 md:gap-12 flex-1 min-w-0">
+                    {/* Links and CTA */}
+                    <div className="navbar-links hidden sm:flex items-center justify-end gap-2 sm:gap-4 md:gap-12 flex-1 min-w-0">
+                        {['About', 'Services', 'Why Us'].map((item) => (
+                            <Link
+                                key={item}
+                                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                                className="text-[8px] sm:text-[9px] md:text-base font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
+                            >
+                                {item}
+                                <span className="absolute -bottom-1 left-0 w-0 h-px bg-dsp-primary transition-all group-hover:w-full" />
+                            </Link>
+                        ))}
+
+                        {/* Contact Button */}
+                        <Link href="/contact" className="inline-flex items-center flex-shrink-0">
+                            <GlossyButton variant="primary" className="px-2.5 py-1 text-[8px] sm:px-3 sm:py-1.5 sm:text-[9px] md:px-6 md:py-2.5 md:text-base">
+                                Contact Us
+                            </GlossyButton>
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Mobile Second Row - Nav Items */}
+                <div className="flex sm:hidden items-center justify-end gap-2 pb-3 pt-2 border-t border-gray-100">
                     {['About', 'Services', 'Why Us'].map((item) => (
                         <Link
                             key={item}
                             href={`#${item.toLowerCase().replace(" ", "-")}`}
-                            className="text-[8px] sm:text-[9px] md:text-base font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
+                            className="text-[8px] font-bold uppercase text-gray-600 hover:text-dsp-charcoal transition-colors relative group"
                         >
                             {item}
                             <span className="absolute -bottom-1 left-0 w-0 h-px bg-dsp-primary transition-all group-hover:w-full" />
                         </Link>
                     ))}
 
-                    {/* Contact Button */}
-                    <Link href="/contact" className="inline-flex items-center flex-shrink-0">
-                        <GlossyButton variant="primary" className="px-2.5 py-1 text-[8px] sm:px-3 sm:py-1.5 sm:text-[9px] md:px-6 md:py-2.5 md:text-base">
+                    {/* Mobile Contact Button */}
+                    <Link href="/contact" className="inline-flex items-center">
+                        <GlossyButton variant="primary" className="px-2 py-1 text-[8px]">
                             Contact Us
                         </GlossyButton>
                     </Link>
