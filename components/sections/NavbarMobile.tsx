@@ -6,16 +6,16 @@ import { BrandText } from "../ui/BrandText";
 export function NavbarMobile() {
     return (
         <div className="sm:hidden">
-            {/* Mobile First Row - Brand */}
-            <div className="flex items-center justify-between gap-1 transition-all duration-300 py-2">
-                <Link href="/" className="navbar-brand flex items-center gap-2 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
+            {/* Mobile First Row - Brand (Center Justified) */}
+            <div className="flex items-center justify-center gap-2 transition-all duration-300 py-3 w-full">
+                <Link href="/" className="navbar-brand flex items-center gap-2 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300">
                     <BrandLogo className="w-8 h-8" />
                     <BrandText className="w-[130px] h-10 transition-all duration-300 ease-in-out" />
                 </Link>
             </div>
 
-            {/* Mobile Second Row - Nav Items */}
-            <div className="flex items-center justify-end gap-2 pb-2 pt-1 border-t border-gray-100">
+            {/* Mobile Second Row - Nav Items (Right Justified) */}
+            <div className="flex items-center justify-end gap-2 pb-3 pt-2 px-4 border-t border-gray-100 w-full">
                 {['About', 'Services', 'Why Us'].map((item) => (
                     <Link
                         key={item}
