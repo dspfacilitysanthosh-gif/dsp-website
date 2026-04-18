@@ -30,8 +30,8 @@ export function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-1 sm:gap-4 transition-all duration-300">
                 {/* Brand */}
                 <Link href="/" className="navbar-brand flex items-center gap-2 sm:gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
-                    <BrandLogo className="w-10 h-10 sm:w-12 sm:h-12" />
-                    <BrandText className="w-[100px] sm:w-[160px] h-9 sm:h-12 transition-all duration-300 ease-in-out" />
+                    <BrandLogo className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+                    <BrandText className="w-[130px] sm:w-[160px] md:w-[180px] h-10 sm:h-11 md:h-12 transition-all duration-300 ease-in-out" />
                 </Link>
 
                 {/* Links and CTA */}
