@@ -27,7 +27,7 @@ export function Navbar() {
                 scrolled ? "bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm py-3" : "bg-transparent py-5"
             )}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-1 sm:gap-4 transition-all duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap sm:flex-nowrap items-center justify-between gap-1 sm:gap-4 transition-all duration-300">
                 {/* Brand */}
                 <Link href="/" className="navbar-brand flex items-center gap-2 sm:gap-3 font-bold tracking-tighter text-dsp-charcoal transition-all duration-300 min-w-0">
                     <BrandLogo className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
@@ -35,7 +35,7 @@ export function Navbar() {
                 </Link>
 
                 {/* Links and CTA */}
-                <div className="navbar-links flex items-center justify-end gap-2 sm:gap-4 md:gap-12 flex-1 min-w-0">
+                <div className="navbar-links w-full sm:w-auto flex items-center justify-end gap-2 sm:gap-4 md:gap-12 flex-1 min-w-0">
                     {['About', 'Services', 'Why Us'].map((item) => (
                         <Link
                             key={item}
